@@ -1,0 +1,19 @@
+.logo{
+    margin: auto;
+    width: 10%;
+    height: 10%;
+}
+
+.navbar{
+    background-color: #10100F;
+}
+
+.navar-brand{
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+.container-fluid{
+    padding: 0px !important;
+    margin: 0px !important;
+}
