@@ -6,12 +6,12 @@ import logoani from '../img/logoani.gif';
 const Navbar = () => {
     return (
         <BrowserRouter>
-            <nav className="navbar navbar-expand-lg navbar-dark">
+            <nav className="navbar navbar-expand-lg navbar-dark" style={{ maxHeight: '100px' }} navbarScroll>
                 <div className="container-fluid">
                     <Link className="navbar-brand" to='/home'>
                         <img src={logoani} className='logo' alt='logo'></img> <span>ComidApp</span>
                     </Link>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">

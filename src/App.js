@@ -1,19 +1,25 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js';
+
+import React, {Suspense, lazy} from 'react';
 import Navbar from './components/Navbar';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Muestra from './components/Muestra';
+
+const Muestra = lazy(()=>import('./components/Muestra'));
+
 
 function App() {
+  
   return (
     <div className="App">
       <Navbar/>
       <Header />
+      <Suspense fallback={<h1>Cargando...</h1>}>
       <Muestra/>
+      </Suspense>
       <Footer />
     </div>
   );
 }
+
 
 export default App;
